@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d611f59ffd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav id="navbar">
+            <h1><span class="letter">A</span>aditya</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+
+            <div class="header-text">
+                <h1>Hi, I'm <span class="name">Aaditya Raj</span><br>final year student at<br>NIT Patna.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/profile_pic.png" alt="profile-pic">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a final year student at National Institute of Technology Patna,currently pursuing B.Tech in
+                        Computer Science and Engineering. I am a very passionate person to become the best version of
+                        myself. I am a fast learner,someone who is always determined to work hard and consistently
+                        involved in improving my skills.I have a good understanding of data structures and
+                        algorithms,C,C++,Java,HTML5,CSS and JavaScript.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li><span>C/C++</span><br>DSA/Coding</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July'23-Aug'23</span><br>Web Developer Intern at InternPe</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.tech(CSE) 2020-24</span><br>National Institute of Technology, Patna</li>
+                            <li><span>Intermediate(CBSE) 2020</span><br>Brilliant Public School, Jehanabad</li>
+                            <li><span>Matriculation(CBSE) 2018</span><br>Sainik School Ambikapur, Chhattisgarh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------projects-------------------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>VolleySocial</h3>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>Social media webpage through which we can connect to many people throughout the globe.</p>
+                        <a href="https://aaditya482.github.io/VolleySocial/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce</h3>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Cloth Shopping Webpage through we can purchase cloth items, add to cart and save to
+                            favourites.</p>
+                        <a href="https://aaditya482.github.io/E-commerce_website/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>WeatherUpdate</h3>
+                        <i class="fa-solid fa-cloud"></i>
+                        <p>WeatherUpdate is your ultimate companion for staying informed about the ever-changing weather
+                            conditions in your area and around the world.</p>
+                        <a href="https://aaditya482.github.io/weather_app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>adraj26082002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7742538482</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/aadiiii_.26._/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aaditya-raj-160762205/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/aaditya482"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" name="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
