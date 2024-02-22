@@ -7,20 +7,23 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d611f59ffd.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div id="header">
         <nav id="navbar">
-            <h1><span class="letter">A</span>aditya</h1>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="box">
+                <h1><span class="letter">A</span>aditya</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sub-title">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
         </nav>
         <div class="container">
 
@@ -39,10 +42,7 @@
                 <div class="about-col2">
                     <h1 class="sub-title">About Me</h1>
                     <p>I am a final year student at National Institute of Technology Patna,currently pursuing B.Tech in
-                        Computer Science and Engineering. I am a very passionate person to become the best version of
-                        myself. I am a fast learner,someone who is always determined to work hard and consistently
-                        involved in improving my skills.I have a good understanding of data structures and
-                        algorithms,C,C++,Java,HTML5,CSS and JavaScript.</p>
+                        Computer Science and Engineering. I am a very passionate person to become the best version of myself. I am a fast learner,someone who is always determined to work hard and consistently involved in improving my skills.I have a good understanding of data structures and algorithms, C++, HTML5, CSS, Javascript,Vue.js, React.js, Nest.js, MongoDb Atlas.</p>
                     <div class="tab-titles">
                         <p class="tab-links active" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -51,12 +51,12 @@
                     <div class="tab-contents active" id="skills">
                         <ul>
                             <li><span>C/C++</span><br>DSA/Coding</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Web Development</span><br>C++, HTML5, CSS, Javascript,Vue.js, React.js, Nest.js, MongoDb Atlas.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>July'23-Aug'23</span><br>Web Developer Intern at InternPe</li>
+                            <li><span>Dec'23-Jan'24</span><br>SDE Intern at Salesine</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -76,8 +76,29 @@
 
     <div id="projects">
         <div class="container">
-            <h1 class="sub-title">My Projects</h1>
+            <h1 id="sub-title">My Projects</h1>
             <div class="project-list">
+                <div class="project">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>TaskTracker</h3>
+                        <i class="fa-solid fa-cloud"></i>
+                        <p>Utilized Vue.js and Nest.js to develop basic task management functionalities, with the backend exposing RESTful endpoints for various operations.
+                            </p>
+                        <a href="https://superlative-semolina-63b0b0.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>PhotoApp</h3>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Implemented features for adding new photos by specifying a URL and functionality to remove photos, allowing users to manage their gallery content efficiently</p>
+                        <a href="https://github.com/aaditya482/PhotoApp"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
                 <div class="project">
                     <img src="images/work-1.png" alt="">
                     <div class="layer">
@@ -88,28 +109,7 @@
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="project">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>E-commerce</h3>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <p>Cloth Shopping Webpage through we can purchase cloth items, add to cart and save to
-                            favourites.</p>
-                        <a href="https://aaditya482.github.io/E-commerce_website/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>WeatherUpdate</h3>
-                        <i class="fa-solid fa-cloud"></i>
-                        <p>WeatherUpdate is your ultimate companion for staying informed about the ever-changing weather
-                            conditions in your area and around the world.</p>
-                        <a href="https://aaditya482.github.io/weather_app/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+                
             </div>
             <a href="#" class="btn">See more</a>
         </div>
@@ -144,8 +144,8 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
